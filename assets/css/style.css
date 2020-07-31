@@ -35,7 +35,26 @@ p {
   line-height: 1.4;
 }
 
-/* FONT AWERSOMEs ============================================== */
+/* RESPONSIVE GENERAL ============================================== */
+
+.mobile {
+  display: block;
+}
+
+.desktop {
+  display: none;
+}
+
+@media (min-width: 750px) {
+  .mobile {
+    display:none;
+  }
+  .desktop {
+    display: block;
+  }
+}
+
+/* FONT AWERSOME ============================================== */
 .fa-icon {
   margin: 0 8px;
 }
