@@ -1,0 +1,234 @@
+/* VARIABLES ============================================== */
+
+:root {
+  --primary: #B99A6F;
+  --white: #ffffff;
+  --lightGrey: #F5F5F5;
+  --grey: #707070;
+  --black: #000000;
+
+
+  --font-serif: 'Noto Serif', serif;
+  --font-sans-serif: 'Noto Sans', sans-serif;
+}
+
+/* GENERAL ============================================== */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-sans-serif);
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width:100%
+}
+
+p {
+  margin-bottom: 24px;
+  line-height: 1.4;
+}
+
+/* HEADER MENU ============================================== */
+
+.header-nav-container {
+  width: 100%;
+  height: 90px;
+  border-bottom: 1px solid var(--grey);
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  background: var(--white);
+}
+
+.header-menu {
+  position: absolute;
+  top: 90px;
+  background: black;
+  width: 100%;
+  right: 0;
+  height: calc(100vh - 90px);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  
+  display: none;
+}
+
+.header-mobile-btn {
+  text-decoration: none;
+}
+
+/* SECTION GENERAL ============================================== */
+
+.main-content {
+  padding-top: 90px;
+}
+
+.section-container {
+  padding: 0 20px;
+}
+
+.bg-colored {
+  background-color: var(--lightGrey);
+  margin-top: 32px;
+}
+
+.section-title {
+  font-size:20px;
+  font-family: var(--font-serif);
+  color: var(--primary);
+  padding: 32px 0;
+  text-align: center;
+}
+
+/* CAROUSEL ============================================== */
+
+.carousel-item {
+  max-width: 300px;
+  margin: 0 auto 32px;
+  border: 1px solid var(--lightGrey)
+}
+
+.carousel-content-wrapper {
+  padding:16px 20px;
+}
+
+.carousel-title {
+  font-size: 20px;
+  font-family: var(--font-serif);
+  text-align: center;
+  padding-bottom:16px;
+}
+
+.carousel-content {
+  font-size:14px;
+  margin-bottom:0px;
+}
+
+.carousel-preco-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--lightGrey);
+  padding: 16px 20px;
+}
+
+.carousel-preco {
+  font-size: 20px;
+  text-align: right;
+}
+
+.carousel-preco-de-por{
+  font-size:  14px;
+  display: block;
+  text-decoration: line-through;
+  padding-bottom:4px;
+}
+
+/* BENEFITS ============================================== */
+
+.benefits-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.benefit-item {
+  border: 1px solid var(--primary);
+  width: 40%;
+  max-width: 145px;
+  margin: 5%;
+  padding: 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.benefit-item:hover {
+  background-color: var(--primary);
+}
+
+.benefit-item:hover .benefit-text {
+  color: var(--white);
+}
+
+.benefit-icon {
+  max-width: 32px;
+  margin: 0 auto;
+}
+
+.benefit-text {
+  margin-top: 8px;
+  margin-bottom: 0px;
+  color: var(--primary);
+  text-align: center;
+}
+
+.porque-fazer {
+
+}
+
+/* BUTTON EXPANDED ============================================== */
+
+.expanded-button {
+  display: block;
+  width: 100%;
+  height: 120px;
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* QUEM SOMOS ============================================== */
+
+.quem-somos-img {
+  display: block;
+  margin: 0 auto 32px auto;
+}
+
+/* FOOTER ============================================== */
+
+.footer-container {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.logo-footer {
+  max-width: 64px;
+}
+
+.logo-footer-container {
+  display: block;
+}
+
+.logo-footer-container::after,
+.social::after {
+  content:"";
+  display:block;
+  width: 200px;
+  height: 1px;
+  background-color: var(--grey);
+  margin: 32px auto;
+}
+
+.footer-content {
+  font-size:14px;
+}
