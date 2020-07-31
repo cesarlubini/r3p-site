@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <script src="https://kit.fontawesome.com/fb8c8498b4.js" crossorigin="anonymous"></script>
   <title>R3P Cursos</title>
 </head>
 <body>
@@ -16,8 +18,12 @@
 <!-- HEADER AND NAV ------------------------------------------------------------------>
   <header class="header">
     <nav class="header-nav-container">
-      <img src="assets/img/logo.png" alt="R3P Cursos" class="logo-principal">
-      <a href="#" class="header-mobile-btn">Menu</a>
+      <a href="#">
+        <img src="assets/img/logo.png" alt="R3P Cursos" class="logo-principal">
+      </a>
+      <a href="#" class="header-mobile-btn">
+          <i class="fas fa-bars fa-2x"></i>
+      </a>
       <ul class="header-menu">
         <li>Login</li>
         <li>Quem Somos</li>
@@ -44,59 +50,76 @@
 
 
       <ul class="carousel-container">
-        <li class="carousel-item">
-          <img src="assets/img/curso-massoterapia.png" alt="" class="carousel-banner">
-          <div class="carousel-content-wrapper">
-            <h2 class="carousel-title">Noções Básicas e Introdução à Massoterapia</h2>
-            <p class="carousel-content">Destinado a pessoas que desejam ingressar na área da massagem, o curso aborda os principais temas que fazem parte do dia a dia de uma massoterapeuta.</p>
-          </div>
-          <div class="carousel-preco-wrapper">
-            <a class="btn-line" href="#">Saiba mais</a>
-            <div class="carousel-preco">
-              <span class="carousel-preco-de-por">
-              R$399,00
-              </span>
-              R$199,00
+        <a href="#">
+          <li class="carousel-item">
+            <img src="assets/img/curso-massoterapia.png" alt="" class="carousel-banner">
+            <div class="carousel-content-wrapper">
+              <h2 class="carousel-title">Noções Básicas e Introdução à Massoterapia</h2>
+              <p class="carousel-content">Destinado a pessoas que desejam ingressar na área da massagem, o curso aborda os principais temas que fazem parte do dia a dia de uma massoterapeuta.</p>
             </div>
-          </div>
-        </li>
+            <div class="carousel-preco-wrapper">
+              <span class="carousel-btn-line" href="#">Saiba mais</span>
+              <div class="carousel-preco">
+                <span class="carousel-preco-de-por">
+                R$399,00
+                </span>
+                R$199,00
+              </div>
+            </div>
+          </li>
+        </a>
       </ul>
     </section>
 
     <section class="section-container bg-colored porque-fazer">
-      <h2 class="section-title">Por que fazer os nossos cursos?</h2>
-
-      <p>Talvez o grande paradoxo dos dias atuais seja a falta de tempo versus a necessidade de conhecimento e aprimoramento exigido por um  mercado cada dia mais globalizado e competitivo.</p>
-
-      <p>Nossos cursos e workshops foram idealizados com o objetivo de proporcionar rapidez de resultados, a mesma linha de raciocínio empregada nos Métodos Renata França – estrutura que permite que em apenas um único dia as pessoas estejam aptas a colher os efeitos positivos do aprendizado.</p>
-
-      <div class="benefits-container">
-
-        <div class="benefit-item">
-          <img class="benefit-icon" src="assets/img/cursos-exclusivos.png" alt="">
-          <p class="benefit-text">Cursos Exclusivos</p>
-        </div>
-
-        <div class="benefit-item">
-          <img class="benefit-icon" src="assets/img/cursos-exclusivos.png" alt="">
-          <p class="benefit-text">No seu tempo</p>
-        </div>
-
-        <div class="benefit-item">
-          <img class="benefit-icon" src="assets/img/cursos-exclusivos.png" alt="">
-          <p class="benefit-text">Acesso por 1 ano</p>
-        </div>
-
-        <div class="benefit-item">
-          <img class="benefit-icon" src="assets/img/cursos-exclusivos.png" alt="">
-          <p class="benefit-text">Cursos com Certificado</p>
+      <div class="boxed">
+        <h2 class="section-title">Por que fazer os nossos cursos?</h2>
+  
+        <p>Talvez o grande paradoxo dos dias atuais seja a falta de tempo versus a necessidade de conhecimento e aprimoramento exigido por um  mercado cada dia mais globalizado e competitivo.</p>
+  
+        <p>Nossos cursos e workshops foram idealizados com o objetivo de proporcionar rapidez de resultados, a mesma linha de raciocínio empregada nos Métodos Renata França – estrutura que permite que em apenas um único dia as pessoas estejam aptas a colher os efeitos positivos do aprendizado.</p>
+  
+        <div class="benefits-container">
+  
+          <div class="benefit-item">
+            <span class="benefit-icon">
+              <i class="far fa-star"></i>
+            </span>
+            <p class="benefit-text">Cursos Exclusivos</p>
+          </div>
+  
+          <div class="benefit-item">
+            <span class="benefit-icon">
+              <i class="far fa-star"></i>
+            </span>
+            <p class="benefit-text">No seu tempo</p>
+          </div>
+  
+          <div class="benefit-item">
+            <span class="benefit-icon">
+              <i class="far fa-star"></i>
+            </span>
+            <p class="benefit-text">Acesso por 1 ano</p>
+          </div>
+  
+          <div class="benefit-item">
+            <span class="benefit-icon">
+              <i class="far fa-star"></i>
+            </span>
+            <p class="benefit-text">Cursos com Certificado</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <a href="#" class="expanded-button">Confira nossos cursos</a>
+    <a href="#" class="expanded-button">
+      <span class="fa-icon">
+        <i class="far fa-hand-point-up"></i>
+      </span>
+      Confira nossos cursos
+    </a>
 
-    <section class="section-container quem-somos">
+    <section class="section-container boxed quem-somos">
       <h2 class="section-title">Quem somos</h2>
       <img class="quem-somos-img" src="assets/img/quem-somos.png" alt="Renata França">
 
@@ -111,22 +134,24 @@
       <div class="carousel-container">
         
         <ul class="carousel-container">
-          <li class="carousel-item">
-            <img src="assets/img/curso-massoterapia.png" alt="" class="carousel-banner">
-            <div class="carousel-content-wrapper">
-              <h2 class="carousel-title">Noções Básicas e Introdução à Massoterapia</h2>
-              <p class="carousel-content">Destinado a pessoas que desejam ingressar na área da massagem, o curso aborda os principais temas que fazem parte do dia a dia de uma massoterapeuta.</p>
-            </div>
-            <div class="carousel-preco-wrapper">
-              <a class="btn-line" href="#">Saiba mais</a>
-              <div class="carousel-preco">
-                <span class="carousel-preco-de-por">
-                R$399,00
-                </span>
-                R$199,00
+          <a href="#">
+            <li class="carousel-item">
+              <img src="assets/img/curso-massoterapia.png" alt="" class="carousel-banner">
+              <div class="carousel-content-wrapper">
+                <h2 class="carousel-title">Noções Básicas e Introdução à Massoterapia</h2>
+                <p class="carousel-content">Destinado a pessoas que desejam ingressar na área da massagem, o curso aborda os principais temas que fazem parte do dia a dia de uma massoterapeuta.</p>
               </div>
-            </div>
-          </li>
+              <div class="carousel-preco-wrapper">
+                <span class="carousel-btn-line" href="#">Saiba mais</span>
+                <div class="carousel-preco">
+                  <span class="carousel-preco-de-por">
+                  R$399,00
+                  </span>
+                  R$199,00
+                </div>
+              </div>
+            </li>
+          </a>
         </ul>
       </div>
     </section>
@@ -143,7 +168,13 @@
     </a>
 
     <div class="social">
-      Facebook | instagram
+      <a href="#" class="fa-icon">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      |
+      <a href="#" class="fa-icon">
+        <i class="fab fa-instagram"></i>
+      </a>
     </div>
 
     <div class="footer-content">

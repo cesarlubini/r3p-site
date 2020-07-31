@@ -23,6 +23,7 @@ html {
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 img {
@@ -32,6 +33,11 @@ img {
 p {
   margin-bottom: 24px;
   line-height: 1.4;
+}
+
+/* FONT AWERSOMEs ============================================== */
+.fa-icon {
+  margin: 0 8px;
 }
 
 /* HEADER MENU ============================================== */
@@ -76,6 +82,11 @@ p {
 
 .section-container {
   padding: 0 20px;
+}
+
+.boxed {
+  max-width: 1024px;
+  margin:0 auto;
 }
 
 .bg-colored {
@@ -123,6 +134,10 @@ p {
   padding: 16px 20px;
 }
 
+.carousel-btn-line {
+  text-decoration: underline;
+}
+
 .carousel-preco {
   font-size: 20px;
   text-align: right;
@@ -144,6 +159,7 @@ p {
 
 .benefit-item {
   border: 1px solid var(--primary);
+  color: var(--primary);
   width: 40%;
   max-width: 145px;
   margin: 5%;
@@ -157,24 +173,20 @@ p {
   background-color: var(--primary);
 }
 
-.benefit-item:hover .benefit-text {
+.benefit-item:hover {
   color: var(--white);
 }
 
 .benefit-icon {
-  max-width: 32px;
+  font-size:32px;
   margin: 0 auto;
+  
 }
 
 .benefit-text {
   margin-top: 8px;
   margin-bottom: 0px;
-  color: var(--primary);
   text-align: center;
-}
-
-.porque-fazer {
-
 }
 
 /* BUTTON EXPANDED ============================================== */
@@ -217,6 +229,10 @@ p {
 
 .logo-footer-container {
   display: block;
+}
+
+.social{
+  font-size:24px;
 }
 
 .logo-footer-container::after,
