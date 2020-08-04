@@ -6,6 +6,7 @@
   --lightGrey: #F5F5F5;
   --grey: #707070;
   --black: #000000;
+  --btn-cta: #ED831F;
 
 
   --font-serif: 'Noto Serif', serif;
@@ -36,6 +37,22 @@ p {
   margin-bottom: 24px;
   line-height: 1.4;
 }
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--black);
+  font-family: var(--font-sans-serif);
+  font-size:16px;
+}
+
+.sr-only {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  }
 
 /* RESPONSIVE GENERAL ============================================== */
 
@@ -95,6 +112,28 @@ p {
   text-decoration: none;
 }
 
+@media (min-width: 750px) {
+
+  .header-menu {
+    display: flex;
+    position: initial;
+    width:auto;
+    height: auto;
+    background: unset;
+    color: var(--black);
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .header-menu-item {
+    padding:0 12px;
+  }
+
+  .header-mobile-btn {
+    display: none;
+  }
+}
+
 /* SECTION GENERAL ============================================== */
 
 .main-content {
@@ -112,7 +151,13 @@ p {
 
 .bg-colored {
   background-color: var(--lightGrey);
+}
+
+.bg-dark {
+  background-color: var(--black);
   margin-top: 32px;
+  color:var(--white);
+  padding-bottom: 32px;
 }
 
 .section-title {
@@ -131,23 +176,32 @@ p {
   border: 1px solid var(--lightGrey)
 }
 
-.carousel-content-wrapper {
+@media (min-width: 750px) {
+  .carousel-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* CARD ============================================== */
+
+.card-content-wrapper {
   padding:16px 20px;
 }
 
-.carousel-title {
+.card-title {
   font-size: 20px;
   font-family: var(--font-serif);
   text-align: center;
   padding-bottom:16px;
 }
 
-.carousel-content {
+.card-content {
   font-size:14px;
   margin-bottom:0px;
 }
 
-.carousel-preco-wrapper {
+.card-preco-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -155,27 +209,20 @@ p {
   padding: 16px 20px;
 }
 
-.carousel-btn-line {
+.card-btn-line {
   text-decoration: underline;
 }
 
-.carousel-preco {
+.card-preco {
   font-size: 20px;
   text-align: right;
 }
 
-.carousel-preco-de-por{
+.card-preco-de-por{
   font-size:  14px;
   display: block;
   text-decoration: line-through;
   padding-bottom:4px;
-}
-
-@media (min-width: 750px) {
-  .carousel-container {
-    display: flex;
-    justify-content: space-between;
-  }
 }
 
 /* POR QUE FAZER AND BENEFITS ============================================== */
@@ -206,7 +253,8 @@ p {
   color: var(--white);
 }
 
-.benefit-icon {
+.benefit-icon,
+.inner-benefit-icon {
   font-size:32px;
   margin: 0 auto;
   
@@ -246,7 +294,7 @@ p {
 
 /* QUEM SOMOS ============================================== */
 
-.quem-somos-img {
+.blocked-img {
   display: block;
   margin: 0 auto 32px auto;
 }

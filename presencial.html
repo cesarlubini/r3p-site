@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/page-style.css">
 
   <script src="https://kit.fontawesome.com/fb8c8498b4.js" crossorigin="anonymous"></script>
   <title>R3P Cursos</title>
@@ -34,23 +35,34 @@
     </nav>
   </header>
 
-<!-- CONTENT -->
+  <!-- CONTENT -->
 
   <main class="main-content">
-    <section class="banner-home">
-      <a href="pagina-interna-online.html" class="banner-home-link">
-        <img class="banner mobile" src="assets/img/banner-home.png" alt="Introdução a Massoterapia" >
-        <img class="banner desktop" src="assets/img/banner-home-desktop.png" alt="Introdução a Massoterapia" >
-      </a>
+
+    <section class="page-title">
+      <h1>Cursos Presenciais</h1>
     </section>
 
-    <section class="section-container lancamentos">
-      <h2 class="section-title">Lançamentos</h2>
+    <form class="form-search" action="#">
+      <fieldset>
+        <label class="form-search-item" for="todos">
+          <input type="checkbox" name="todos" id="todos" checked>
+          Todos
+        </label>
+        <label class="form-search-item" for="desenvolvimento-pessoal">
+          <input type="checkbox" name="desenvolvimento-pessoal" id="desenvolvimento-pessoal" >
+          Desenvolvimento Pessoal
+        </label>
+        <label class="form-search-item" for="saude">
+          <input type="checkbox" name="saude" id="saude" >
+          Saúde
+        </label>
+      </fieldset>
+    </form>
 
-<!-- CAROUSEL -->
-
+    <section class="search-result">
       <ul class="carousel-container boxed">
-        <a href="#">
+        <a href="pagina-interna-presencial.html">
           <li class="carousel-item">
             <div class="card">
               <img src="assets/img/curso-massoterapia.png" alt="" class="card-banner">
@@ -71,7 +83,7 @@
           </li>
         </a>
 
-        <a class="desktop"href="#"> <!-- Ilustrativo, apenas para demonstrar a responsividade -->
+        <a class="desktop" href="#"> <!-- Ilustrativo, apenas para demonstrar a responsividade -->
           <li class="carousel-item">
             <div class="card">
               <img src="assets/img/curso-massoterapia.png" alt="" class="card-banner">
@@ -92,7 +104,7 @@
           </li>
         </a>
         
-        <a class="desktop"href="#"> <!-- Ilustrativo, apenas para demonstrar a responsividade -->
+        <a class="desktop" href="#"> <!-- Ilustrativo, apenas para demonstrar a responsividade -->
           <li class="carousel-item">
             <div class="card">
               <img src="assets/img/curso-massoterapia.png" alt="" class="card-banner">
@@ -115,10 +127,17 @@
       </ul>
     </section>
 
+    <a href="todos-workshops-presenciais.html" class="expanded-button">
+      <span class="fa-icon">
+        <i class="far fa-hand-point-up"></i>
+      </span>
+      Confira nossos workshops
+    </a>
+
     <section class="section-container bg-colored">
       <div class="porque-fazer boxed">
         <div class="porque-fazer-content">
-          <h2 class="section-title">Por que fazer os nossos cursos?</h2>
+          <h2 class="section-title">Por que fazer os nossos workshops?</h2>
     
           <p>Talvez o grande paradoxo dos dias atuais seja a falta de tempo versus a necessidade de conhecimento e aprimoramento exigido por um  mercado cada dia mais globalizado e competitivo.</p>
     
@@ -158,26 +177,15 @@
       </div>
     </section>
 
-    <a href="#" class="expanded-button">
+    <a href="todos-workshops-presenciais.html" class="expanded-button">
       <span class="fa-icon">
         <i class="far fa-hand-point-up"></i>
       </span>
-      Confira nossos cursos
+      Confira nossos workshops
     </a>
 
-    <section class="section-container boxed quem-somos">
-      <h2 class="section-title">Quem somos</h2>
-        <img class="blocked-img" src="assets/img/quem-somos.png" alt="Renata França">
-  
-        <div class="quem-somos-content">
-          <p> A R3P Cursos Livres foi idealizada por Renata França, a massagista mais requisitada entre as celebridades brasileiras, criadora da consagrada massagem Miracle Touch e do Método Renata França, presente em mais de 40 países.</p>
-    
-          <p>Obstinada em valorizar a massagem, Renata França ministra o método que leva seu nome por todo o Brasil, e foi colecionando experiências pelo país que viu a necessidade de desenvolver uma espécie de laboratório onde pudesse se aprofundar, por meio de cursos e workshops, em temas que julga de extrema importância, como atendimento, mercado de luxo, moda, comportamento, etiqueta, mídias sociais, gerenciamento, marketing digital etc.</p>
-        </div>
-    </section>
-
-    <section class="section-container">
-      <h2 class="section-title">Presencial</h2>
+    <section class="section-container lancamentos">
+      <h2 class="section-title">Últimos cursos</h2>
 
       <ul class="carousel-container boxed">
         <a href="#">
@@ -244,11 +252,12 @@
         </a>
       </ul>
     </section>
+
   </main>
 
 
 
-<!-- FOOTER -->
+  <!-- FOOTER -->
 
 
   <footer class="footer-container">
@@ -284,4 +293,5 @@
     </div>
   </footer>
 </body>
+
 </html>
