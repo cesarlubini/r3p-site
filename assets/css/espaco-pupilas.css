@@ -1,0 +1,71 @@
+/* ARGINS ESPECIFICOS ============================================== */
+.main-container.espaco-pupilas p,
+.espaco-pupilas-galeria {
+    margin-bottom: 32px;
+}
+
+
+/* GALERIA ============================================== */
+
+@media (min-width: 750px) {
+    .espaco-pupilas-wrapper {
+        display: flex;
+    }
+    
+    .espaco-pupilas-wrapper p {
+        order: 2;
+        width: 100%;
+    }
+    
+    .espaco-pupilas-wrapper .espaco-pupilas-galeria {
+        order: 1;
+        max-width: 400px;
+        margin-right: 64px;
+        margin-bottom: 64px;
+    }
+  }
+
+/* CARD RECICLAGEM ============================================== */
+
+.card-reciclagem-wrapper {
+    display: flex;
+    min-height: 62px;
+    margin-bottom: 24px;
+}
+
+.reciclagem-category {
+    background-color: var(--reciclagem);
+    width: 8px;
+    height: inherit;
+    display: block;
+}
+
+.card-reciclagem-container {
+    background-color: rgb(var(--primary));
+    width: 100%;
+    padding: 8px 12px;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 750px) {
+    .card-reciclagem-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+@media (min-width: 956px){
+    .card-reciclagem-list {
+        justify-content: space-between;
+    }
+}
+
+    .card-reciclagem-list li {
+        width: 300px;
+    }
+
+}
+
