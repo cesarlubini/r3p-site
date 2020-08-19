@@ -1,0 +1,149 @@
+/* MARGIN E PADDING ESPECIFICOS ============================================== */
+
+.section-colored.como-funciona {
+  margin-bottom: 32px;
+  padding-bottom:0px;
+}
+
+.curso-page .section-container .btn-success {
+  margin-bottom: 32px;
+}
+
+.curso-page p {
+  margin-bottom: 32px;
+}
+
+@media (min-width: 750px) {
+  .section-colored.como-funciona {
+    padding-bottom:0px;
+    margin-bottom: 0px;
+  }
+}
+
+/* PAGE BANNER ============================================== */
+
+.page-banner.curso-banner {
+  max-height: 300px;
+}
+
+@media (min-width: 750px) {
+  .page-banner {
+    max-height: 300px;
+    margin-bottom: 64px;
+  }
+
+  .page-banner.curso-banner {
+    max-height: 400px;
+  }
+}
+
+/* VIDEO ============================================== */
+
+.video-card {
+  margin-bottom: 32px;
+}
+
+/* MODULOS ============================================== */
+
+.modulo-title {
+  padding: 16px;
+  background-color: rgb(var(--primary));
+  color: var(--white);
+  font-size:14px;
+  border-radius:3px;
+}
+
+.modulo-title .modulo{
+  font-weight: bold;
+  font-size:16px;
+}
+
+.modulo-content {
+  padding: 16px 0;
+}
+
+.modulo-title,
+.modulo-content ul li {
+  line-height: 1.6;
+}
+
+/* COMPRAR AGORA ============================================== */
+
+.comprar-agora {
+  background-color: var(--white);
+  width: 100%;
+  position: fixed;
+  bottom:0;
+  left:0;
+  z-index: 9;
+}
+
+.curso-page .comprar-agora .btn-success {
+  margin-bottom: 0px;
+}
+
+.comprar-agora.mobile .card-preco {
+  text-align:left;
+  margin-right:20px;
+}
+
+.curso-page .section-container {
+  position: relative;
+}
+
+.comprar-agora.desktop .card-preco-wrapper {
+  color: black;
+  border-top: none;
+}
+
+.comprar-agora.desktop .section-title {
+  padding: 16px 20px;
+  margin-bottom: 0;
+}
+
+.comprar-agora.desktop .thumb {
+  margin: 0 auto;
+  display: block;
+}
+
+.comprar-agora.desktop p {
+  margin-bottom: 12px;
+  text-align: right;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.comprar-agora.desktop {
+  background-color: var(--white);
+  width:300px;
+  top:120px;
+  margin-left:685px;
+  left:auto;
+  bottom:auto;
+  box-shadow: 0px 0px 6px rgb(var(--primary),.4);
+  border-radius:3px;
+}
+
+.comprar-agora.desktop .card-preco-wrapper {
+  display: block;
+}
+
+/* UTILITARIOS ============================================== */
+
+.curso-page {
+  position: relative;
+}
+
+.atencao {
+  font-weight: var(--font-bold);
+}
+
+@media (min-width: 750px) {
+  .boxed-curso {
+    max-width: 540px;
+  }
+}
+
+.curso-page .benefits-wrapper {
+  display: block;
+}

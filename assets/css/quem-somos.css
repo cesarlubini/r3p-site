@@ -1,0 +1,87 @@
+/* MARGIN ESPECIFICO ============================================== */
+.quem-somos p,
+.quem-somos .section-colored,
+.quem-somos-photo {
+  margin-bottom: 32px;
+}
+
+@media (min-width: 750px) {
+  .quem-somos .section-colored {
+    margin-bottom: 64px;
+  }
+}
+
+/* QUEM SOMOS ============================================== */
+
+@media (min-width: 750px) {
+  .quem-somos-wrapper-desktop {
+    display: flex;
+  }
+  .quem-somos-photo {
+    width: auto;
+    height: 240px;
+    margin-right: 16px;
+  }
+
+  .quem-somos-bg-reciclagem {
+    background-image: url('../img/quem-somos-reciclagem.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  .quem-somos-bg-reciclagem,
+  .quem-somos-bg-reciclagem .section-title{
+    color: var(--white);
+  }
+}
+
+/* QUOTE / CITACAO ============================================== */
+
+.main-quote {
+  max-width: 90%;
+  margin-left:12px;
+  font-size:14px;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.main-quote::before {
+  content:"";
+  width: 4px;
+  height: 52px;
+  background-color: rgb(var(--primary));
+  display: block;
+  position: absolute;
+  top:0;
+  left: -12px;
+}
+
+.main-quote p{
+  margin-bottom: 12px;
+}
+
+.main-quote footer {
+  text-align: right;
+  font-weight: var(--font-bold);
+}
+
+@media (min-width: 750px) {
+  .quem-somos-bg-reciclagem .main-quote {
+    max-width: 60%;
+    margin-left:auto;
+  }
+
+  .quem-somos-bg-reciclagem .main-quote::before {
+    background-color: var(--white);
+  }
+
+  .main-quote p{
+    line-height: 1.8;
+  }
+
+  .main-quote::before {
+    top:8px;
+  }
+}

@@ -101,10 +101,9 @@
 
 .modulo-title {
   padding: 16px;
-  background-color: var(--black);
+  background-color: var(--primary);
   color: var(--white);
   font-size:14px;
-  line-height: 1.6;
 }
 
 .modulo-title .modulo{

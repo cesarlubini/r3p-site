@@ -1,18 +1,28 @@
 /* VARIABLES ============================================== */
 
 :root {
-  --primary: #B99A6F;
+  --primary: 40,40,45; /* #28282d*/
+
+  --cta-success: #16D377;
+  --cta-secondary: #f5f5f5;
+
+  --text: #707070;
+  --text-negative: #fff;
+
+  --dev-pessoal: #929292;
+  --saude: #A6D7CF;
+  --reciclagem: #FCC0CF;
+
   --white: #ffffff;
   --lightGrey: #F5F5F5;
   --grey: #707070;
-  --black: #000000;
-  --btn-cta: #ED831F;
 
+  --font: 'Open Sans', sans-serif;;
+  --font-light: 300;
+  --font-regular: 400;
+  --font-bold: 600;
 
-  --font-serif: 'Noto Serif', serif;
-  --font-sans-serif: 'Noto Sans', sans-serif;
-
-  --desktop-bp: 750px;
+  --teste: 40,40,45
 }
 
 /* GENERAL ============================================== */
@@ -21,7 +31,8 @@
 }
 
 html {
-  font-family: var(--font-sans-serif);
+  font-family: var(--font);
+  color: var(--grey);
 }
 
 a {
@@ -34,14 +45,13 @@ img {
 }
 
 p {
-  margin-bottom: 24px;
   line-height: 1.4;
 }
 
 input::placeholder,
 textarea::placeholder {
   color: var(--black);
-  font-family: var(--font-sans-serif);
+  font-family: var(--font);
   font-size:16px;
 }
 
@@ -78,18 +88,104 @@ textarea::placeholder {
   margin: 0 8px;
 }
 
+
+/* SECTION GENERAL ============================================== */
+
+.main-container {
+  padding-top: 90px;
+}
+
+.section-container {
+  padding: 0 20px;
+}
+
+.section-colored {
+  background-color: var(--lightGrey);
+  padding-top:32px;
+  padding-bottom:32px;
+}
+
+.boxed {
+  max-width: 1024px;
+  margin:0 auto;
+}
+
+.section-title,
+.section-title-rich {
+  font-size:20px;
+  font-weight: var(--font-bold);
+  color: rgb(var(--primary));
+  margin-bottom: 32px;
+}
+
+.rich-title{
+  margin-bottom: 16px;
+}
+
+.rich-text{
+  font-size:14px;
+  font-weight: var(--font-regular);
+}
+
+.divider {
+  width: 100%;
+  height:1px;
+  background-color: var(--grey);
+  opacity: .2;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 750px) {
+  .main-container {
+    padding-top: 0px;
+  }
+
+  .section-colored {
+    padding-top:64px;
+    padding-bottom:64px;
+  }
+
+  .section-title,
+  .section-title-rich {
+    font-size:24px;
+  }
+
+  .rich-title{
+    margin-bottom: 8px;
+  }
+
+  .rich-text{
+    font-size:16px;
+  }
+
+  .divider {
+    margin-bottom: 64px;
+  }
+}
+
+/* AREA DE LEITURA ============================================== */
+
+.read {
+  max-width: 640px;
+}
+
 /* HEADER MENU ============================================== */
 
-.header-nav-container {
+.main-header {
   width: 100%;
   height: 90px;
-  border-bottom: 1px solid var(--grey);
+  border-bottom: 1px solid var(--lightGrey);
+  background: var(--white);
+  position: fixed;
+  z-index: 10;
+}
+
+.header-nav-container {
   display:flex;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
   padding: 0 20px;
-  position: fixed;
-  background: var(--white);
 }
 
 .header-menu {
@@ -110,9 +206,15 @@ textarea::placeholder {
 
 .header-mobile-btn {
   text-decoration: none;
+  color: rgb(var(--primary));
 }
 
 @media (min-width: 750px) {
+  .main-header {
+    background:rgba(var(--primary), 0.8);
+    color: var(--white);
+    border-bottom: 1px solid var(--Grey);
+  }
 
   .header-menu {
     display: flex;
@@ -134,38 +236,30 @@ textarea::placeholder {
   }
 }
 
-/* SECTION GENERAL ============================================== */
+/* BANNER HOME =========================================== */
 
-.main-content {
-  padding-top: 90px;
+.banner-home {
+  margin-bottom:32px;
 }
 
-.section-container {
-  padding: 0 20px;
+@media (min-width: 750px) {
+  .banner-home {
+    margin-bottom:64px;
+  }
+}
+/* PAGE BANNER ============================================== */
+
+.page-banner {
+  max-height: 120px;
+  overflow: hidden;
+  margin-bottom: 32px;
 }
 
-.boxed {
-  max-width: 1024px;
-  margin:0 auto;
-}
-
-.bg-colored {
-  background-color: var(--lightGrey);
-}
-
-.bg-dark {
-  background-color: var(--black);
-  margin-top: 32px;
-  color:var(--white);
-  padding-bottom: 32px;
-}
-
-.section-title {
-  font-size:20px;
-  font-family: var(--font-serif);
-  color: var(--primary);
-  padding: 32px 0;
-  text-align: center;
+@media (min-width: 750px) {
+  .page-banner {
+    max-height: 300px;
+    margin-bottom: 64px;
+  }
 }
 
 /* CAROUSEL ============================================== */
@@ -173,7 +267,6 @@ textarea::placeholder {
 .carousel-item {
   max-width: 300px;
   margin: 0 auto 32px;
-  border: 1px solid var(--lightGrey)
 }
 
 @media (min-width: 750px) {
@@ -185,15 +278,36 @@ textarea::placeholder {
 
 /* CARD ============================================== */
 
+.card {
+  padding:8px;
+}
+
+.card-banner{
+  max-width: 100%;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
 .card-content-wrapper {
-  padding:16px 20px;
+  padding:16px;
+}
+
+.card-title-wrapper {
+  margin-bottom:16px;
+}
+
+.card-category {
+  display: block;
+  width:40px;
+  height:4px;
+  margin-bottom: 12px;
+  background-color: var(--saude);
 }
 
 .card-title {
   font-size: 20px;
-  font-family: var(--font-serif);
-  text-align: center;
-  padding-bottom:16px;
+  font-family: var(--font-bold);
+  color: rgb(var(--primary));
 }
 
 .card-content {
@@ -209,100 +323,152 @@ textarea::placeholder {
   padding: 16px 20px;
 }
 
-.card-btn-line {
-  text-decoration: underline;
-}
-
 .card-preco {
   font-size: 20px;
   text-align: right;
+  font-weight: var(--font-bold);
 }
 
 .card-preco-de-por{
-  font-size:  14px;
+  font-size: 14px;
   display: block;
   text-decoration: line-through;
   padding-bottom:4px;
+  font-weight: var(--font-regular);
 }
 
-/* POR QUE FAZER AND BENEFITS ============================================== */
+/* BENEFITS ============================================== */
 
-.benefits-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.benefits {
+  margin-bottom:32px;
 }
+
 
 .benefit-item {
-  border: 1px solid var(--primary);
-  color: var(--primary);
-  width: 40%;
-  max-width: 145px;
-  margin: 5%;
-  padding: 20px;
-  display:flex;
-  flex-direction: column;
-  justify-content: space-around;
+  display: flex;
+  padding-bottom:32px;
 }
 
-.benefit-item:hover {
-  background-color: var(--primary);
+.benefit-item .benefit-item-content p{
+  margin-bottom:0px;
 }
 
-.benefit-item:hover {
-  color: var(--white);
+
+.benefit-item-icon {
+  width: 42px;
+  font-size:24px;
+  color: rgb(var(--primary));
 }
 
-.benefit-icon,
-.inner-benefit-icon {
-  font-size:32px;
-  margin: 0 auto;
-  
+.benefit-content-title{
+  font-size: 16px;
+  font-weight: var(--font-bold);
+  color: rgb(var(--primary));
 }
 
-.benefit-text {
-  margin-top: 8px;
-  margin-bottom: 0px;
-  text-align: center;
+.benefit-content-text {
+  font-size: 14px;
 }
 
 @media (min-width: 750px) {
-  .porque-fazer {
+  .benefits {
+    margin-bottom: 64px;
+  }
+  
+  .benefits-wrapper {
+    background-color: var(--lightGrey);
+    border-radius: 3px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
   }
 
-  .porque-fazer-content,
-  .benefits-container {
-    width: 50%;
+  .benefit-item {
+    display: flex;
+    margin:16px;
   }
-}
-
-/* BUTTON EXPANDED ============================================== */
-
-.expanded-button {
-  display: block;
-  width: 100%;
-  height: 120px;
-  background-color: var(--black);
-  color: var(--white);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  text-decoration: none;
 }
 
 /* QUEM SOMOS ============================================== */
 
-.blocked-img {
+.quem-somos-home {
+  width: 100%;
+  height: 300px;
+  background-image: url('../img/quem-somos-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left:20px;
+  padding-right:20px;
+}
+
+.quem-somos-home .section-title,
+.quem-somos-home .btn-line {
+  color: var(--text-negative);
+  text-align: center;
+}
+
+
+/* RECICLAGEM HOME ============================================== */
+
+.reciclagem-home .btn-line {
   display: block;
-  margin: 0 auto 32px auto;
+  width: fit-content;
+  margin: 16px auto 0;
+}
+
+.reciclagem-list-home{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.reciclagem-card-item-home {
+  max-width: 152px;
+  margin-bottom: 16px;
+}
+
+.reciclagem-card-home {
+  background-color: var(--white);
+  color: rgb(var(--primary));
+  display: flex;
+  flex-direction: column;
+  border-radius:0 0 3px 3px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.reciclagem-card-home .reciclagem-category {
+  display: block;
+  width: 100%;
+  height: 8px;
+  background-color: var(--reciclagem);
+}
+
+.reciclagem-card-home .reciclagem-date {
+  font-size: 42px;
+}
+
+.reciclagem-card-home .reciclagem-name {
+  font-size:16px;
+  font-weight: var(--font-bold);
+  padding: 0 8px;
+}
+
+.reciclagem-card-home .btn-negative {
+  margin: 16px auto;
 }
 
 /* FOOTER ============================================== */
 
 .footer-container {
-  background-color: var(--black);
+  background-color: rgb(var(--primary));
   color: var(--white);
   padding: 32px 20px;
   display: flex;
@@ -335,4 +501,38 @@ textarea::placeholder {
 
 .footer-content {
   font-size:14px;
+}
+
+/* BUTTONS ============================================= */
+
+.btn-success {
+  background-color: var(--cta-success);
+  color: var(--white);
+  border-radius: 3px;
+  width: 100%;
+  padding: 16px 24px;
+  transition: all .2s;
+  display: block;
+  text-align: center;
+}
+
+.btn-success:hover {
+  background-color: brightness(80%)
+}
+
+.btn-negative {
+  border: 1px solid rgb(var(--primary));
+  border-radius: 3px;
+  width: fit-content;
+  padding: 8px 16px;
+  transition: all .2s;
+}
+
+.btn-negative:hover {
+  background-color: rgb(var(--primary));
+  color: var(--white);
+}
+
+.btn-line {
+  text-decoration: underline;
 }
