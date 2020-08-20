@@ -13,14 +13,12 @@
     }
     
     .espaco-pupilas-wrapper p {
-        order: 2;
         width: 100%;
+        margin-right: 64px;
     }
     
     .espaco-pupilas-wrapper .espaco-pupilas-galeria {
-        order: 1;
         max-width: 400px;
-        margin-right: 64px;
         margin-bottom: 64px;
     }
   }
