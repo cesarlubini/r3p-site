@@ -325,6 +325,7 @@ textarea::placeholder {
   font-size: 20px;
   text-align: right;
   font-weight: var(--font-bold);
+  color: rgb(var(--primary));
 }
 
 .card-preco-de-por{
@@ -333,6 +334,7 @@ textarea::placeholder {
   text-decoration: line-through;
   padding-bottom:4px;
   font-weight: var(--font-regular);
+  color: var(--text)
 }
 
 /* BENEFITS ============================================== */
@@ -448,20 +450,23 @@ textarea::placeholder {
   width: 100%;
   height: 8px;
   background-color: var(--reciclagem);
+  margin-bottom:12px;
 }
 
 .reciclagem-card-home .reciclagem-date {
-  font-size: 42px;
+  font-size: 24px;
 }
 
 .reciclagem-card-home .reciclagem-name {
-  font-size:16px;
+  font-size:14px;
   font-weight: var(--font-bold);
   padding: 0 8px;
+  color: var(--text);
 }
 
 .reciclagem-card-home .btn-negative {
   margin: 16px auto;
+  font-size: 14px;
 }
 
 /* FOOTER ============================================== */
@@ -555,6 +560,7 @@ textarea::placeholder {
 
 .btn-line {
   text-decoration: underline;
+  color: rgb(var(--primary));
 }
 
 /* FORM GRID ============================================== */
